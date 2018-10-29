@@ -1,9 +1,9 @@
-;;; plantuml-snippets.el --- snippets for plantuml -*- lexical-binding: t -*-
+;;; plantuml-snippets.el --- snippets for plantuml
 
-;; Author: hejack0207
+;; Author: hejack0207 <hejack0207@sina.com>
 ;; Maintainer: hejack0207
 ;; Version: 0.0.1
-;; Package-Requires: (yasnippet)
+;; Package-Requires: ((s "1.4.0") (dash "1.2.0"))
 ;; Homepage: https://github.com/hejack0207/plantuml-snippets.el
 ;; Keywords: plantuml snippets
 
@@ -30,7 +30,22 @@
 
 ;;; Code:
 
-(message "Hello World!")
+(require 'yasnippet)
+(require 'dash)
+(require 's)
+
+(setq plantuml-snippets-root (file-name-directory (or load-file-name
+                                                     (buffer-file-name))))
+
+;;;###autoload
+(defun plantuml-snippets-initialize ()
+  (let ((snip-dir (expand-file-name "snippets" angular-snippets-root)))
+    (when (boundp 'yas-snippet-dirs)
+      (add-to-list 'yas-snippet-dirs snip-dir t))
+    (yas-load-directory snip-dir)))
+
+(eval-after-load "yasnippet"
+  '(plantuml-snippets-initialize))
 
 (provide 'plantuml-snippets)
 
