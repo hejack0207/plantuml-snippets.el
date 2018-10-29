@@ -3,7 +3,7 @@
 ;; Author: hejack0207
 ;; Maintainer: hejack0207
 ;; Version: 0.0.1
-;; Package-Requires: (yas-snippet)
+;; Package-Requires: (yasnippet)
 ;; Homepage: https://github.com/hejack0207/plantuml-snippets.el
 ;; Keywords: plantuml snippets
 
