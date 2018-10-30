@@ -39,7 +39,7 @@
 
 ;;;###autoload
 (defun plantuml-snippets-initialize ()
-  (let ((snip-dir (expand-file-name "snippets" angular-snippets-root)))
+  (let ((snip-dir (expand-file-name "snippets" plantuml-snippets-root)))
     (when (boundp 'yas-snippet-dirs)
       (add-to-list 'yas-snippet-dirs snip-dir t))
     (yas-load-directory snip-dir)))
