@@ -3,9 +3,9 @@
 # key: acifelif
 # --
 if (${1:condition}) then (${2:yes})
-   :activity;
-elseif (${3:condition}) then (${4:yes})
-   :activity;
-else (${5:condition}) (${6:nothing})
-   :activity;
+   :${3:activity};
+elseif (${4:condition}) then (${5:yes})
+   :${6:activity};
+else (${7:condition}) (${8:nothing})
+   :${9:activity};
 endif
