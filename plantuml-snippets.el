@@ -44,6 +44,7 @@
       (add-to-list 'yas-snippet-dirs snip-dir t))
     (yas-load-directory snip-dir)))
 
+;;;###autoload
 (eval-after-load "yasnippet"
   '(plantuml-snippets-initialize))
 
