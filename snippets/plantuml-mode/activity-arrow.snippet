@@ -1,5 +1,5 @@
 # name : arrow in activity diagram
 # contributor : hejack0207 <hejack0207@sina.com>
-# key: aar
+# key: aarr
 # --
--[#green,dashed]-> ${0:notation here}
+${1:-[${2:#${3:colorname$(yas-completing-read "color name?" '("red" "green" "blue"))}}${4:,${5:}}]}-> ${0:notation here}
