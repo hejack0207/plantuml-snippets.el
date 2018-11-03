@@ -26,7 +26,14 @@
 
 ;;; Commentary:
 
-;; commentary
+;; * Introduction
+;; yasnippets for plantuml
+;;
+;; * Installation
+;;  * install using package manager like quelpa
+;; #+BEGIN_SRC elisp
+;; (quelpa '(plantuml-snippets :repo "hejack0207/plantuml-snippets.el" :fetcher github :files (:defaults "snippets")))
+;; #+END_SRC
 
 ;;; Code:
 
