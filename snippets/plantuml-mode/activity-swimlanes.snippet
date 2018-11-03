@@ -2,4 +2,4 @@
 # contributor : hejack0207 <hejack0207@sina.com>
 # key: aswim
 # --
-|${1:#$(yas-completing-read "color? " '("green" "blue" "red"))|}${2:name}|
+|${1:#${2:color name$(yas-completing-read "color name? " '("green" "blue" "red"))}|}${3:name}|
