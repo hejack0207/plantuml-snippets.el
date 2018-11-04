@@ -2,4 +2,4 @@
 # contributor : hejack0207 <hejack0207@sina.com>
 # key: sspa
 # --
-||${1:pixes}${1:$(if yas-text "||" "|")}
+||${1:pixes}${1:$(if (string-empty-p yas-text) "|" "||")}
