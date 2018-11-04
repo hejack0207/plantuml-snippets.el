@@ -3,4 +3,4 @@
 # key: sref
 # --
 ref over ${1:participant}${2:,${3:participant}} ${4:: ${5:simple line text}}
-${4:$(capitnilalize yas-text)}
+${4:$(if (string-prefix-p ":" yas-text) "" "end ref")}
